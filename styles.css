@@ -69,17 +69,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.join-btn a {
-    background-color: #ffd700;
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.join-btn a:hover {
-    background-color: #333;
-    color: #ffd700;
-}
