@@ -1,32 +1,93 @@
-/* (Existing styles remain unchanged) */
-
-nav {
-    display: none; /* Hide navigation links by default on larger screens */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
 }
 
-nav.show {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
+.wrapper {
+    display: flex;
+}
+
+header {
     background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    position: fixed;
+    height: 100%;
     overflow-y: auto;
+    transition: width 0.5s ease; /* Added transition for sidebar width */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 nav ul {
-    padding: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
 }
 
 nav a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
     display: block;
     padding: 10px 0;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #ffd700;
+}
+
+.dark-mode {
+    background-color: #1c1c1c;
+    color: #fff;
+    margin-left: 250px;
+    transition: margin 0.5s ease; /* Adjusted transition for content margin */
+}
+
+section {
+    padding: 80px 20px;
+    transition: opacity 0.5s ease; /* Added transition for page content opacity */
+}
+
+h2 {
+    color: #ffd700;
+}
+
+p {
+    color: #a0a0a0;
+}
+
+.join-btn a {
+    background-color: #ffd700;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-btn a:hover {
+    background-color: #333;
+    color: #ffd700;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
