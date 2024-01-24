@@ -2,39 +2,84 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    transition: background-color 0.5s ease;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-h1 {
-    margin: 0;
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
 section {
-    padding: 40px;
+    padding: 40px 0;
 }
 
-.about, .members {
-    background-color: #fff;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h2 {
+    color: #ffd700;
+}
+
+.join-btn a {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-btn a:hover {
+    background-color: #333;
+    color: #ffd700;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* Add animations and additional styles as needed */
+.join-btn a {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-btn a:hover {
+    background-color: #333;
+    color: #ffd700;
+}
