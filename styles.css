@@ -18,7 +18,7 @@ header {
     position: fixed;
     height: 100%;
     overflow-y: auto;
-    transition: width 0.5s ease; /* Added transition for sidebar width */
+    transition: width 0.5s ease;
 }
 
 .container {
@@ -32,10 +32,21 @@ header {
     font-size: 24px;
 }
 
+nav {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.5s ease;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 20px;
+    padding: 20px;
+    margin: 0;
 }
 
 nav a {
@@ -54,12 +65,17 @@ nav a:hover {
     background-color: #1c1c1c;
     color: #fff;
     margin-left: 250px;
-    transition: margin 0.5s ease; /* Adjusted transition for content margin */
+    transition: margin 0.5s ease;
+}
+
+main {
+    margin-left: 250px;
+    transition: margin 0.5s ease;
 }
 
 section {
     padding: 80px 20px;
-    transition: opacity 0.5s ease; /* Added transition for page content opacity */
+    transition: opacity 0.5s ease;
 }
 
 h2 {
